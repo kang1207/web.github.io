@@ -1,0 +1,47 @@
+body{
+    margin: 0; padding: 0;
+    background: #0C7AF1;
+    font-family: monospace;
+}
+.box{
+    width: 400px; padding: 20px;
+    position: absolute; top:50%; left:50%;
+    transform: translate(-50%,-50%);
+    background: #353636;
+    text-align: center;
+}
+.box h1{
+    font-size: 40px; font-weight: 900;
+    letter-spacing: 7px; text-transform: uppercase;
+    color: aliceblue;
+}
+.box input[type="text"], .box input[type="password"]{
+    background: none; color: white;
+    display: block;/*inline同行 block區塊*/
+    margin: 20px auto;/*上下 左右*/
+    border: 3px solid #00AEFE; padding: 14px 16px;
+    border-radius: 24px;
+    /*text-align: center;*/
+    width: 180px;
+    outline: none;/*去除元件外框線*/
+    transition: 0.2s;
+}
+.box input[type="text"]:focus, .box input[type="password"]:focus{
+    width: 220px;
+    border-color: #61F73C;
+}
+.box input[type="submit"]{
+    background: none; color: white;
+    display: block;
+    margin: 20px auto;
+    border: 3px solid #00AEFE; padding: 14px 16px;
+    border-radius: 24px;
+    width: 140px;
+    outline: none;
+    transition: 0.2s;
+    cursor: pointer; border-color: #61F73C;
+}
+.box input[type="submit"]:hover{
+    background: #61F73C;
+    border: none;
+}
